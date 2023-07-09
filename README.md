@@ -23,7 +23,7 @@ conda install -c conda-forge cvxopt
 
 ## Gallery
 
-**[Atlas Walking Gaits Generation](src/main.py)**:
+**[Atlas Walking Gaits Generation](src/main.py)**: The bending directions of the knees are incorrect, you can add constraints to regulate it.
 
  <img src=".github/atlas_walking.gif" alt="shape_transfer"  width="800" height="390"/>
 
@@ -31,4 +31,4 @@ conda install -c conda-forge cvxopt
 
  - I learned the basics of humanoid walking from [Scaron's notes](https://scaron.info/category/robotics.html).
  - [Drake ZempPlanner Class Reference](https://drake.mit.edu/doxygen_cxx/classdrake_1_1systems_1_1controllers_1_1_zmp_planner.html).
- - Atlas URDF are copied from [PyBullet](https://github.com/bulletphysics/bullet3) with the mesh files transformed to the format of STL.
+ - Atlas URDF is copied from [PyBullet](https://github.com/bulletphysics/bullet3) with the mesh files transformed to the format of STL.
