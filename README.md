@@ -1,6 +1,6 @@
 # generate-humanoid-walking-gaits
 
-This repository shows how to follow the guidelines from Pinocchio to generate walking gaits for a humanoid robot.
+This repository shows how to follow the guidelines from [pinocchio](https://github.com/stack-of-tasks/pinocchio) to generate walking gaits for a humanoid robot.
 
 ## Introduction
 
@@ -31,4 +31,4 @@ conda install -c conda-forge cvxopt
 
  - I learned the basics of humanoid walking from [Scaron's notes](https://scaron.info/category/robotics.html).
  - [Drake ZempPlanner Class Reference](https://drake.mit.edu/doxygen_cxx/classdrake_1_1systems_1_1controllers_1_1_zmp_planner.html).
- - Atlas URDF is copied from [PyBullet](https://github.com/bulletphysics/bullet3) with the mesh files transformed to the format of STL.
+ - The Atlas URDF file is copied from [PyBullet](https://github.com/bulletphysics/bullet3) with the mesh files transformed to the format of STL.
