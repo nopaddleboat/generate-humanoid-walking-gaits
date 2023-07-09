@@ -21,7 +21,7 @@ conda install -c conda-forge matplotlib
 conda install -c conda-forge cvxopt
 ```
 
-## Galley
+## Gallery
 
 **[Atlas Walking Gaits Generation](src/main.py)**:
 
@@ -31,4 +31,4 @@ conda install -c conda-forge cvxopt
 
  - I learned the basics of humanoid walking from [Scaron's notes](https://scaron.info/category/robotics.html).
  - [Drake ZempPlanner Class Reference](https://drake.mit.edu/doxygen_cxx/classdrake_1_1systems_1_1controllers_1_1_zmp_planner.html).
- - Atlas URDF are copied from [PyBullet](https://github.com/bulletphysics/bullet3). However, the mesh files are transformed to the format of STL.
+ - Atlas URDF are copied from [PyBullet](https://github.com/bulletphysics/bullet3) with the mesh files transformed to the format of STL.
