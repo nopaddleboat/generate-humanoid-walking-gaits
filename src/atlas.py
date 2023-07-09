@@ -170,6 +170,7 @@ class Atlas(object):
           #2) CoM match planned 3) orientation of the support foot stays fixed
           #4) torso stay upward 5) pelvis stay upward 
           #6)try to be as close to the initial joint configuration as possible
+          # you can add extra constraints to regulate the arm poses.
           return np.linalg.norm(f_swing_w-swingAnkle)+np.linalg.norm(CoM_k_w-CoM) \
                  +np.abs(pose1[6]-1)+0.2*np.linalg.norm(error_torso) \
                  +0.2*np.linalg.norm(error_pelvis)+0.02*np.linalg.norm(x-q)
