@@ -10,7 +10,7 @@ We chose atlas as the humanoid robot, but you can also use other humanoid models
 
 ## Running Environment
 
-You need to install [pinocchio](https://github.com/stack-of-tasks/pinocchio), [scipy](https://github.com/scipy/scipy), [gepetto-viewer](https://github.com/Gepetto/gepetto-viewer), matplotlib, cvxopt to run the example. The following shows how to setup the environment with conda. The order is important due to the compatibility between different packages.
+You need to install [pinocchio](https://github.com/stack-of-tasks/pinocchio), [scipy](https://github.com/scipy/scipy), [gepetto-viewer](https://github.com/Gepetto/gepetto-viewer), [matplotlib](https://github.com/matplotlib/matplotlib), [cvxopt](https://github.com/cvxopt/cvxopt) to run the example. The following shows how to setup the environment with conda. The order is important due to the compatibility between different packages.
 
 ```bash
 conda create -n test #"test" is the name of the conda environment
