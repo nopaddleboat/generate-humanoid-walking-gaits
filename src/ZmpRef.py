@@ -3,7 +3,7 @@ from foot_steps import *
 import matplotlib.pyplot as plt
 
 class ZmpRef(object):
-    def __init__(self, footsteps):
+    def __init__(self, footsteps:FootSteps):
         self.footsteps = footsteps
  
     def __call__(self, t):        
@@ -16,8 +16,16 @@ class ZmpRef(object):
         k=(t-t_start)/t_total
         act_left= left+(left_next-left)*k
         act_right= right+(right_next-right)*k
+        foot=self.footsteps.get_phase_type(t)
+        zmp=[]
+        if foot=='right':
+            zmp=np.array(act_right)
+        elif foot=='left':
+            zmp=np.array(act_left)
+        else:
+            zmp=np.array((act_left+act_right)/2)       
 
-        return np.array((act_left+act_right)/2)
+        return zmp
 
 def plot_zmp(footsteps:FootSteps):
     test=ZmpRef(footsteps)
